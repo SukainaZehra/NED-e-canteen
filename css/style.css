@@ -1,0 +1,650 @@
+/*========================
+   1. Theme Default CSS
+=======================*/
+@font-face {
+  font-family: "Great Vibes";
+  src: url("../fonts/GreatVibes-Regular.ttf");
+}
+img {
+  max-width: 100%;
+}
+ul {
+  padding: 0;
+}
+.logo a {
+  color: #000;
+  font-size: 30px;
+  padding: 20px 0;
+  display: block;
+  font-family: "Great Vibes", cursive;
+}
+/*************************************
+         Custom-content all   
+ **************************************/
+.boxed-layout .wrapper {
+  box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
+  margin: auto;
+  position: relative;
+  width: 1500px;
+}
+.boxed-layout .sticky {
+  left: 0;
+  right: 0;
+  width: 1500px;
+}
+.boxed-layout.fixed {
+  margin: 70px 0;
+}
+.pattern-fixed.pattern {
+  background: url("images/bg/pattern.png") repeat fixed 0 0;
+}
+/*------------------
+	2.  Heade Css here
+-----------------------*/
+.header {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 99;
+}
+.header-right,
+.header-right .search {
+  float: right;
+}
+.header-right .search,
+.header-menu,
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  color: #535353;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 25px 0 25px 32px;
+  text-transform: uppercase;
+}
+.menu ul {
+  margin: 0;
+}
+.menu ul li {
+  position: relative;
+}
+.header-right .search {
+  padding-left: 38px;
+  padding-top: 47px;
+}
+.search-inner > a {
+  color: #535353;
+  font-size: 22px;
+  font-weight: bold;
+}
+.header .logo {
+  display: inline-block;
+  margin-bottom: -23px;
+  position: relative;
+}
+.search-inside {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  width: 100%;
+  z-index: 99999999;
+}
+.searchbar-inner .search input {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  color: #535353;
+  font-size: 20px !important;
+  height: 50px;
+  z-index: 1;
+}
+.searchbar-inner .search {
+  position: relative;
+}
+.search-inside a.search-close:hover,
+.searchbar-inner .search button:hover {
+  color: #e54c2a;
+}
+.searchbar-inner .search button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #777;
+  font-size: 24px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.search-inside a.search-close {
+  color: #777;
+  font-size: 18px;
+  position: absolute;
+  right: -22px;
+  top: 12px;
+}
+/*----------------------
+	6. Food menu Css here
+----------------------*/
+.foode-item-box ul li {
+  display: inline-block;
+}
+.foode-item-box ul li a:hover {
+  background: inherit;
+}
+.foode-item-box {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  height: 140px;
+  position: relative;
+  text-align: center;
+}
+.foode-item-box:before {
+  background: url(images/food/bg-1.png) no-repeat scroll left center;
+  left: 0;
+}
+.foode-item-box:before,
+.foode-item-box:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  pointer-events: none;
+}
+.foode-item-box:after {
+  background: url(images/food/bg-2.png) no-repeat scroll right center;
+  right: 0;
+}
+.foode-item-box ul li {
+  display: inline-block;
+}
+.foode-item-box ul li a {
+  color: #535353;
+  display: block;
+  font-weight: 600;
+  padding: 59px 15px;
+  text-transform: uppercase;
+}
+.foode-item-box ul li.active a {
+  color: #e54c2a;
+}
+.foode-item-box ul li.active a:focus {
+  background: none;
+}
+.food-img {
+  float: left;
+  margin: 12px 0;
+  text-align: center;
+  width: 20%;
+}
+.single-food-item-desc {
+  border-left: 1px solid #f1f1f1;
+  float: left;
+  padding: 23px 50px 23px 20px;
+  position: relative;
+  width: 100%;
+}
+.single-food-price {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translate(0, -50%);
+  line-height: 1;
+}
+.fooder-menu-description.float_left .single-food-item {
+  padding-right: 70px;
+}
+.single-food-inner {
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+}
+.fooder-menu-description.float_right .single-food-item {
+  padding-left: 70px;
+}
+.single-food-item-title h2 {
+  color: #535353;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+  margin-top: 0;
+}
+.single-food-item-title p {
+  color: #535353;
+  margin: 0;
+}
+.single-food-price > p {
+  color: #e54c2a;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+/*-------------------
+    13. Footer css here
+-----------------*/
+.copyright {
+  background: none repeat scroll 0 0 #e54c2a;
+  padding: 20px 0;
+}
+.copyright p {
+  color: #fff;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.copyright p a {
+  color: #fff;
+  font-weight: bold;
+}
+.copyright p a:hover {
+  text-decoration: underline;
+}
+.newsletter-form input {
+  background: none repeat scroll 0 0 #fff;
+  border: medium none;
+  color: #999999;
+  font-weight: 600;
+}
+.newsletter-form button {
+  background: none repeat scroll 0 0 #e54c2a;
+  border: medium none;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 14px 38px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.newsletter-form button:hover {
+  background: #535353;
+}
+.single-footer-details ul {
+  display: block;
+  padding-top: 10px;
+}
+
+/*-------------------------
+    15.1 Breadcrubs css here
+-------------------------------*/
+.breadcrubs {
+  background: rgba(0, 0, 0, 0) url("../images/breadcrubs.jpg") no-repeat scroll
+    center center / cover;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 100px 0;
+  position: relative;
+  z-index: 9;
+  margin-bottom: 45px;
+}
+h3.breadcrubs-title {
+  color: #535353;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.breadcurbs-inner ul li {
+  color: #e54c2a;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.breadcurbs-inner ul li a {
+  color: #535353;
+}
+.breadcurbs-inner ul li span {
+  margin: 0 10px;
+}
+.breadcurbs-inner li a:hover {
+  color: #e54c2a;
+}
+/*---------------------
+    16. about css here
+--------------------*/
+.about-details {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding: 60px;
+  width: 55%;
+}
+.about-rest-img {
+  float: right;
+  width: 50%;
+}
+.about-inner {
+  position: relative;
+}
+.about-title > h2 {
+  color: #535353;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.about-description p.text-1 {
+  margin-bottom: 35px;
+}
+/*-------------------------
+    20. Food menu css here
+------------------------------*/
+.food_item_box ul li {
+  display: inline-block;
+  margin-left: 85px;
+}
+.food_item_box ul li a {
+  color: #535353;
+  display: block;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  padding: 38px 0;
+  text-transform: capitalize;
+}
+.food_item_box ul li:first-child {
+  margin: 0;
+}
+.food_item_box ul li.active a {
+  color: #e54c2a;
+}
+.food_item_box {
+  height: 170px;
+}
+.item1 .food_item_box {
+  background: rgba(0, 0, 0, 0) url("images/food/food-menu/bg.png") no-repeat
+    scroll left center / cover;
+}
+.load-more > a {
+  border: 1px solid #f1f1f1;
+  color: #e54c2a;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 0;
+  text-transform: capitalize;
+}
+.load-more > a:hover {
+  background: #e54c2a none repeat scroll 0 0;
+  color: #fff;
+}
+.item2 .food_item_box {
+  background: url("images/food/food-menu/bg-2.png") no-repeat scroll center
+    center;
+  background-size: cover;
+}
+.item3 .food_item_box {
+  height: 210px;
+}
+.item3 .food_item_box {
+  background: url("images/food/food-menu/bg-3.png") no-repeat scroll left center;
+  background-size: cover;
+}
+.item3 .food_item_box ul li {
+  margin-top: 35px;
+}
+/*--------------------------
+   23. Contact us pages css here
+--------------------------*/
+.contact-icon > a {
+  color: #666666;
+  display: inline-block;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 50px;
+}
+.contact-icon > a:before {
+  background: rgba(0, 0, 0, 0) url("images/icons/border.png") no-repeat scroll
+    center center / cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+.single-contact-information p {
+  line-height: 20px;
+  margin-bottom: 0;
+}
+.single-contact-information .contact-icon {
+  margin-bottom: 12px;
+}
+.contact-information {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+.contact-bottom-section .col-md-6.map-div {
+  padding-right: 0;
+}
+.contact-bottom-section .col-md-6.contact-form-div .contact-form {
+  float: right;
+  padding-left: 30px;
+  width: 585px;
+}
+.contact-form-title h2 {
+  color: #535353;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.contact-form-box input {
+  border: 1px solid #dddddd;
+  color: #aaaaaa;
+  margin-bottom: 18px;
+  padding-left: 20px;
+}
+.contact-form-box textarea {
+  border: 1px solid #ddd;
+  height: 100px;
+  padding-left: 20px;
+  resize: none;
+}
+.contact-form-box button {
+  background: #e54c2a none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 40px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.contact-form-box button:hover {
+  background: #555;
+}
+.contact-bottom-section {
+  position: relative;
+}
+.contact-bottom-section .bg-img {
+  background: rgba(0, 0, 0, 0) url("images/common/contact-page.jpg") no-repeat
+    scroll left center / cover;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.form-messege.success {
+  color: green;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.form-messege.error {
+  color: red;
+  text-transform: capitalize;
+  font-style: italic;
+}
+/*-------------------------
+    24.Navigation css here
+-------------------------*/
+/*-------------------------
+    24.1 Dropdown menu css here
+-------------------------*/
+.menu ul li:hover a,
+.menu ul li:hover ul li a:hover {
+  color: #e54c2a;
+}
+.menu ul li:hover ul li a {
+  color: #535353;
+}
+.menu ul li ul.dropdown_menu {
+  left: 0;
+  top: 100%;
+  width: 200px;
+}
+.menu ul li ul.dropdown_menu,
+.menu ul li ul.dropdown_menu li ul.dropdown-submenu {
+  border-bottom: 2px solid #e54c2a;
+  border-top: 2px solid #e54c2a;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  visibility: hidden;
+  z-index: 99999;
+}
+.menu ul li ul.dropdown_menu li {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  -webkit-transform: rotateX(-95deg);
+  transform: rotateX(-95deg);
+  -webkit-transform-origin: 0 0 0;
+  transform-origin: 0 0 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.menu ul li ul.dropdown_menu li:last-child {
+  border-bottom: medium none;
+}
+.menu ul li ul.dropdown_menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+.menu ul li:hover ul.dropdown_menu,
+.menu ul li ul.dropdown_menu li:hover ul.dropdown-submenu {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+}
+.menu ul li:hover ul.dropdown_menu li,
+.menu ul li ul.dropdown_menu li:hover ul.dropdown-submenu li {
+  background: #fff;
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+}
+.menu ul li ul.dropdown_menu li {
+  position: relative;
+}
+.menu ul li ul.dropdown_menu li ul.dropdown-submenu {
+  left: 100%;
+  margin-top: -2px;
+  top: 0;
+  width: 100%;
+}
+.menu ul li ul.dropdown_menu li ul.dropdown-submenu li {
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.menu ul li ul.dropdown_menu li.dropdown-mega:after {
+  content: "ï„…";
+  font-family: FontAwesome;
+  font-size: 18px;
+  position: absolute;
+  right: 12px;
+  top: 5px;
+}
+
+/*--------------------------
+    31.4 Button css
+---------------------------------*/
+a.button {
+  background: #e54c2a none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s;
+}
+a.button.large {
+  font-size: 18px;
+  padding: 18px 0;
+}
+.button.large span {
+  display: inline-block;
+  padding: 0 60px;
+}
+.button span {
+  font-family: "Lato", sans-serif;
+}
+.button.large i {
+  padding: 0 12px;
+}
+a.button.medium {
+  font-size: 16px;
+  padding: 18px 0;
+}
+.button.medium span {
+  display: inline-block;
+  padding: 0 40px;
+}
+.button.medium i {
+  padding: 0 12px;
+}
+a.button.little {
+  font-size: 15px;
+  padding: 14px 0;
+}
+.button.little span {
+  display: inline-block;
+  padding: 0 20px;
+}
+.button.little i {
+  padding: 0 12px;
+}
+a.button.button-black {
+  background: #4a4a4a;
+}
+a.button.button-black:hover {
+  background: #fff;
+  color: #4a4a4a;
+}
+a.button.button-white,
+a.button:hover {
+  background: #fff;
+  color: #e54c2a;
+}
+a.button.button-white:hover,
+a.button.border_radius.button-black:hover {
+  background: #e54c2a;
+  color: #fff;
+}
+a.button.border-radius {
+  border-radius: 0;
+  padding: 14px 0;
+}
+a.button.btn-gray {
+  background: #e5e5e5 none repeat scroll 0 0;
+  color: #777;
+}
+a.button.border_radius {
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 16px 8px;
+  text-transform: uppercase;
+}
+a.button.btn-border {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 2px solid;
+  color: #4a4a4a;
+}
+a.button.btn-gray:hover,
+a.button.btn-border:hover {
+  color: #e54c2a;
+}1
